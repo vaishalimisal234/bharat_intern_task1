@@ -1,0 +1,181 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <script src="https://kit.fontawesome.com/b3869b8bd2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li> <a href="#header"> Home</a></li>
+                    <li> <a href="#about"> About</a></li>
+                    <li> <a href="#"> Resume</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li> <a href="#contact"> contact
+
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>WEB Designer</p>
+                <h1>Hi , I am <span>Vaishali Misal</span> <br>from Pune</h1>
+                <h1><span>V</span>aishali</h1>
+                
+              
+            </div>
+        </div> 
+        
+    </div>
+
+
+   
+    <div id="about">
+        <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="vaishali.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Student at JSPM imperial college of engineering pune<br>A web Developer <br> Explorer, Wonderer</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web Developer</span><br>HTML  , CSS , JavaScript</li>
+                        <li><span>Java Developer</span><br>Core Java, DBC, JSP Servlet ,Hibernet, Springboot<br></li>
+                        <li><span>Programming</span><br>C , C++ , Python</li>
+                        <li><span>Databases</span><br>Mysql , Mongodb</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Fresher </span></li>
+                      
+                        
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>SSC boards 2019</span><br>81%</li>
+                        <li><span>HSC boards 2021</span><br>82.5%</li>
+                        <li><span>BE 2025</span><br>Pursuing</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-regular fa-briefcase"></i>
+                    <h2>Freelancing Website</h2>
+                    <p>Many websites are out there to help freelancers find projects.
+                         While they’re not all created equal, 
+                         and some are meant only for workers with specific skills, 
+                        the right website can help you spend less time looking for work,
+                         so you can spend more time on-task.</p>
+                        <a heref="#"> Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h2>Shopping website</h2>
+                    <p>Online Shopping Website using wordpress
+                         that provides vendors and People to use efficient and time saving platform for Shopping and selling,
+                         wordpress is helpful for non Technical people</p>
+                        <a heref="#"> Learn More</a>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-landmark"></i>
+                    <h2>Landing page</h2>
+                    <p>Basic landing page for interior Designer, Which includes basic HTML and CSS</p>
+                        <a heref="#"> Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+<!-- ---------------contact ------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope-circle-check"></i>vaishalimisal25062003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7397879691</p>
+                    <div class="social-icons">
+                        <a href=https://www.facebook.com/vaishali.misal.3> <i class="fa-brands fa-facebook"></i> </a>
+                        <a href=https://twitter.com/vaishalimisal2><i  class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/vaish_39/"><i class="fa-brands fa-instagram"></i> </a>
+                 
+                        <a href=https://www.linkedin.com/in/pragati-nagargoje-5a6672229><i class="fa-brands fa-linkedin"></i></a>
+                        
+                        
+                    </div>
+                    <a href="vaishaliresume.pdf" class="btn btn2">Download CV</a>
+                </div> 
+                <div class="contact-right">
+                    <form>
+                        <input type=" text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">SUBMIT</button>
+                    </form>
+                </div> 
+            </div>
+        </div>
+        <div class="copyright">
+
+            <p>copyright @ vaish, Made By<i class="fa-solid fa-heart"></i> vaishal2</p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for ( tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for ( tablink of tabcontents) {
+        tablink.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+    </script>
+</body>
+</html>
